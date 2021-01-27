@@ -16,7 +16,7 @@
  * on each monitor. Each client contains a bit array to indicate the tags of a
  * client.
  *
- * Keys and tagging rules are organized as arrays and defined in config.h.
+ * Keys and tagging rules are organized as arrays and defined in myconfig.h.
  *
  * To understand everything else, start reading main().
  */
@@ -334,7 +334,7 @@ static Window root, wmcheckwin;
 static xcb_connection_t *xcon;
 
 /* configuration, allows nested code to access above variables */
-#include "config.h"
+#include "myconfig.h"
 
 /* compile-time check if all tags fit into an unsigned int bit array. */
 struct NumTags { char limitexceeded[LENGTH(tags) > 31 ? -1 : 1]; };
