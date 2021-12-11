@@ -136,7 +136,7 @@ ResourcePref resources[] = {
 #include "shiftview.c"
 
 static Key keys[] = {
-   /* modifier                     key            function        argument */
+   /* modifier                     key            function         argument */
    STACKKEYS(MODKEY,                              focus)
    STACKKEYS(MODKEY|ShiftMask,                    push)
    TAGKEYS(                        XK_1,          0)
@@ -149,59 +149,60 @@ static Key keys[] = {
    TAGKEYS(                        XK_8,          7)
    TAGKEYS(                        XK_9,          8)
 
-   { MODKEY,                       XK_0,          view,           {.ui = ~0} },
-   { MODKEY|ShiftMask,             XK_0,          tag,            {.ui = ~0} },
-   { MODKEY,                       XK_Tab,        view,           {0} },
-   { MODKEY,                       XK_q,          killclient,     {0} },
-   { MODKEY|ShiftMask,             XK_q,          quit,           {0} },
-   { MODKEY,                       XK_r,          spawn,          SHCMD(TERMINAL " -e ranger") },
-   { MODKEY|ShiftMask,             XK_r,          spawn,          SHCMD(TERMINAL " -e htop") },
-   { MODKEY,                       XK_t,          setlayout,      {.v = &layouts[0]} }, /* tile */
-   { MODKEY|ShiftMask,             XK_t,          setlayout,      {.v = &layouts[1]} }, /* bstack */
-   { MODKEY,                       XK_y,          setlayout,      {.v = &layouts[2]} }, /* spiral */
-   { MODKEY|ShiftMask,             XK_y,          setlayout,      {.v = &layouts[3]} }, /* dwindle */
-   { MODKEY,                       XK_u,          setlayout,      {.v = &layouts[4]} }, /* deck */
-   { MODKEY|ShiftMask,             XK_u,          setlayout,      {.v = &layouts[5]} }, /* monocle */
-   { MODKEY,                       XK_i,          setlayout,      {.v = &layouts[6]} }, /* centeredmaster */
-   { MODKEY|ShiftMask,             XK_i,          setlayout,      {.v = &layouts[7]} }, /* centeredfloatingmaster */
-   { MODKEY,                       XK_m,          spawn,          SHCMD("ytdl-mpv") },
-   { MODKEY,                       XK_o,          incnmaster,     {.i = +1} },
-   { MODKEY|ShiftMask,             XK_o,          incnmaster,     {.i = -1} },
-   { MODKEY,                       XK_p,          spawn,          SHCMD("rofi-pass") },
-   { MODKEY|ShiftMask,             XK_p,          spawn,          SHCMD("rofi-power") },
-   { MODKEY,                       XK_backslash,  view,           {0} },
-   { MODKEY,                       XK_a,          togglegaps,     {0} },
-   { MODKEY|ShiftMask,             XK_a,          defaultgaps,    {0} },
-   { MODKEY,                       XK_s,          togglesticky,   {0} },
-   { MODKEY,                       XK_d,          spawn,          SHCMD("rofi -show drun") },
-   { MODKEY,                       XK_f,          togglefullscr,  {0} },
-   { MODKEY|ShiftMask,             XK_f,          setlayout,      {.v = &layouts[8]} },
-   { MODKEY,                       XK_g,          shiftview,      {.i = -1} },
-   { MODKEY|ShiftMask,             XK_g,          shifttag,       {.i = -1} },
-   { MODKEY,                       XK_h,          setmfact,       {.f = -0.05} },
+   { MODKEY,                       XK_0,          view,            {.ui = ~0} },
+   { MODKEY|ShiftMask,             XK_0,          tag,             {.ui = ~0} },
+   { MODKEY,                       XK_Tab,        view,            {0} },
+   { MODKEY,                       XK_q,          killclient,      {0} },
+   { MODKEY|ShiftMask,             XK_q,          quit,            {0} },
+   { MODKEY,                       XK_r,          spawn,           SHCMD(TERMINAL " -e ranger") },
+   { MODKEY|ShiftMask,             XK_r,          spawn,           SHCMD(TERMINAL " -e htop") },
+   { MODKEY,                       XK_t,          setlayout,       {.v = &layouts[0]} }, /* tile */
+   { MODKEY|ShiftMask,             XK_t,          setlayout,       {.v = &layouts[1]} }, /* bstack */
+   { MODKEY,                       XK_y,          setlayout,       {.v = &layouts[2]} }, /* spiral */
+   { MODKEY|ShiftMask,             XK_y,          setlayout,       {.v = &layouts[3]} }, /* dwindle */
+   { MODKEY,                       XK_u,          setlayout,       {.v = &layouts[4]} }, /* deck */
+   { MODKEY|ShiftMask,             XK_u,          setlayout,       {.v = &layouts[5]} }, /* monocle */
+   { MODKEY,                       XK_i,          setlayout,       {.v = &layouts[6]} }, /* centeredmaster */
+   { MODKEY|ShiftMask,             XK_i,          setlayout,       {.v = &layouts[7]} }, /* centeredfloatingmaster */
+   { MODKEY,                       XK_m,          spawn,           SHCMD("ytdl-mpv") },
+   { MODKEY,                       XK_o,          incnmaster,      {.i = +1} },
+   { MODKEY|ShiftMask,             XK_o,          incnmaster,      {.i = -1} },
+   { MODKEY,                       XK_p,          spawn,           SHCMD("rofi-pass") },
+   { MODKEY|ShiftMask,             XK_p,          spawn,           SHCMD("rofi-power") },
+   { MODKEY,                       XK_backslash,  view,            {0} },
+   { MODKEY,                       XK_a,          togglegaps,      {0} },
+   { MODKEY|ShiftMask,             XK_a,          defaultgaps,     {0} },
+   { MODKEY,                       XK_s,          togglesticky,    {0} },
+   { MODKEY,                       XK_d,          spawn,           SHCMD("rofi -show drun") },
+   { MODKEY,                       XK_f,          togglefullscr,   {0} },
+   { MODKEY|ShiftMask,             XK_f,          setlayout,       {.v = &layouts[8]} },
+   { MODKEY,                       XK_g,          shiftview,       {.i = -1} },
+   { MODKEY|ShiftMask,             XK_g,          shifttag,        {.i = -1} },
+   { MODKEY,                       XK_h,          setmfact,        {.f = -0.05} },
    /* J and K are automatically bound above in STACKEYS */
-   { MODKEY,                       XK_l,          setmfact,       { .f = +0.05} },
-   { MODKEY|ShiftMask,             XK_l,          spawn,          SHCMD("slock") },
-   { MODKEY,                       XK_semicolon,  shiftview,      {.i = 1} },
-   { MODKEY|ShiftMask,             XK_semicolon,  shifttag,       {.i = 1} },
-   { MODKEY,                       XK_apostrophe, togglescratch,  {.ui = 1} },
-   { MODKEY,                       XK_Return,     spawn,          {.v = termcmd} },
-   { MODKEY|ShiftMask,             XK_Return,     togglescratch,  {.ui = 0} },
-   { MODKEY,                       XK_z,          incrgaps,       {.i = +3} },
-   { MODKEY,                       XK_x,          incrgaps,       {.i = -3} },
+   { MODKEY,                       XK_l,          setmfact,        { .f = +0.05} },
+   { MODKEY|ShiftMask,             XK_l,          spawn,           SHCMD("slock") },
+   { MODKEY,                       XK_semicolon,  shiftview,       {.i = 1} },
+   { MODKEY|ShiftMask,             XK_semicolon,  shifttag,        {.i = 1} },
+   { MODKEY,                       XK_apostrophe, togglescratch,   {.ui = 1} },
+   { MODKEY|ShiftMask,             XK_apostrophe, togglesmartgaps, {0} },
+   { MODKEY,                       XK_Return,     spawn,           {.v = termcmd} },
+   { MODKEY|ShiftMask,             XK_Return,     togglescratch,   {.ui = 0} },
+   { MODKEY,                       XK_z,          incrgaps,        {.i = +3} },
+   { MODKEY,                       XK_x,          incrgaps,        {.i = -3} },
    /* V is automatically bound above in STACKKEYS */
-   { MODKEY,                       XK_b,          togglebar,      {0} },
-   { MODKEY,                       XK_Left,       focusmon,       {.i = -1} },
-   { MODKEY|ShiftMask,             XK_Left,       tagmon,         {.i = -1} },
-   { MODKEY,                       XK_Right,      focusmon,       {.i = +1} },
-   { MODKEY|ShiftMask,             XK_Right,      tagmon,         {.i = +1} },
-   { MODKEY,                       XK_Page_Up,    shiftview,      {.i = -1} },
-   { MODKEY|ShiftMask,             XK_Page_Up,    shifttag,       {.i = -1} },
-   { MODKEY,                       XK_Page_Down,  shiftview,      {.i = +1} },
-   { MODKEY|ShiftMask,             XK_Page_Down,  shifttag,       {.i = +1} },
-   { MODKEY,                       XK_space,      zoom,           {0} },
-   { MODKEY|ShiftMask,             XK_space,      togglefloating, {0} },
-   { MODKEY,                       XK_Print,      spawn,          SHCMD("teiler") },
+   { MODKEY,                       XK_b,          togglebar,       {0} },
+   { MODKEY,                       XK_Left,       focusmon,        {.i = -1} },
+   { MODKEY|ShiftMask,             XK_Left,       tagmon,          {.i = -1} },
+   { MODKEY,                       XK_Right,      focusmon,        {.i = +1} },
+   { MODKEY|ShiftMask,             XK_Right,      tagmon,          {.i = +1} },
+   { MODKEY,                       XK_Page_Up,    shiftview,       {.i = -1} },
+   { MODKEY|ShiftMask,             XK_Page_Up,    shifttag,        {.i = -1} },
+   { MODKEY,                       XK_Page_Down,  shiftview,       {.i = +1} },
+   { MODKEY|ShiftMask,             XK_Page_Down,  shifttag,        {.i = +1} },
+   { MODKEY,                       XK_space,      zoom,            {0} },
+   { MODKEY|ShiftMask,             XK_space,      togglefloating,  {0} },
+   { MODKEY,                       XK_Print,      spawn,           SHCMD("teiler") },
 
    { 0, XF86XK_AudioMute,          spawn,         SHCMD("pamixer -t; kill -44 $(pidof dwmblocks)") },
    { 0, XF86XK_AudioRaiseVolume,   spawn,         SHCMD("pamixer -i 3; kill -44 $(pidof dwmblocks)") },
