@@ -57,6 +57,7 @@ static const Rule rules[] = {
    { NULL,       "spterm",    NULL,            SPTAG(0),     1,           1,          0,        -1 },
    { NULL,       "spcalc",    NULL,            SPTAG(1),     1,           1,          0,        -1 },
    { "Firefox",  NULL,        NULL,            1 << 1,       0,           0,          0,        -1 },
+   { "firefox",  NULL,        NULL,            1 << 1,       0,           0,          0,        -1 },
    { "Telegram", NULL,        NULL,            1 << 2,       0,           0,          0,        -1 },
 };
 
