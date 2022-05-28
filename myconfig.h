@@ -182,7 +182,7 @@ static Key keys[] = {
    { MODKEY,                       XK_h,          setmfact,        {.f = -0.05} },
    /* J and K are automatically bound above in STACKEYS */
    { MODKEY,                       XK_l,          setmfact,        { .f = +0.05} },
-   { MODKEY|ShiftMask,             XK_l,          spawn,           SHCMD("slock") },
+   { MODKEY|ShiftMask,             XK_l,          spawn,           SHCMD("xautolock -locknow") },
    { MODKEY,                       XK_semicolon,  shiftview,       {.i = 1} },
    { MODKEY|ShiftMask,             XK_semicolon,  shifttag,        {.i = 1} },
    { MODKEY,                       XK_apostrophe, togglescratch,   {.ui = 1} },
