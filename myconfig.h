@@ -3,6 +3,7 @@
 /* Constants */
 #define TERMINAL "alacritty"
 #define TERMCLASS "Alacritty"
+#define BROWSER "librewolf"
 
 /* appearance */
 static unsigned int borderpx  = 3;        /* border pixel of windows */
@@ -51,14 +52,13 @@ static const Rule rules[] = {
     * WM_NAME(STRING) = title
    */
    /* class      instance     title            tags mask     isfloating   isterminal  noswallow  monitor */
-   { "Gimp",     NULL,        NULL,            1 << 8,       0,           0,          0,        -1 },
-   { TERMCLASS,  NULL,        NULL,            0,            0,           1,          0,        -1 },
-   { NULL,       NULL,       "Event Tester",   0,            0,           0,          1,        -1 },
-   { NULL,       "spterm",    NULL,            SPTAG(0),     1,           1,          0,        -1 },
-   { NULL,       "spcalc",    NULL,            SPTAG(1),     1,           1,          0,        -1 },
-   { "Firefox",  NULL,        NULL,            1 << 1,       0,           0,          0,        -1 },
-   { "firefox",  NULL,        NULL,            1 << 1,       0,           0,          0,        -1 },
-   { "Telegram", NULL,        NULL,            1 << 2,       0,           0,          0,        -1 },
+   { "Gimp",      NULL,        NULL,            1 << 8,       0,           0,          0,        -1 },
+   { TERMCLASS,   NULL,        NULL,            0,            0,           1,          0,        -1 },
+   { NULL,        NULL,       "Event Tester",   0,            0,           0,          1,        -1 },
+   { NULL,        "spterm",    NULL,            SPTAG(0),     1,           1,          0,        -1 },
+   { NULL,        "spcalc",    NULL,            SPTAG(1),     1,           1,          0,        -1 },
+   { "librewolf", NULL,        NULL,            1 << 1,       0,           0,          0,        -1 },
+   { "Telegram",  NULL,        NULL,            1 << 2,       0,           0,          0,        -1 },
 };
 
 /* layout(s) */
