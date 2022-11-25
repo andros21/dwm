@@ -27,7 +27,7 @@ Particolar requirements, you should install/set if you want to compile and use t
 * brightnessctl (adjust screen brightness)
 * dwmblocks-luke (make && make install)
 * feh (for background)
-* pamixer (pulse audio mixer, make && make install)
+* wpctl (wireplumber control cli)
 * picom or compton (for alpha effects)
 * ranger (simple file manager and more)
 * rofi (dmenu replacement)
