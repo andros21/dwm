@@ -58,6 +58,7 @@ static const Rule rules[] = {
    { NULL,        "spterm",    NULL,            SPTAG(0),     1,           1,          0,        -1 },
    { NULL,        "spcalc",    NULL,            SPTAG(1),     1,           1,          0,        -1 },
    { "librewolf", NULL,        NULL,            1 << 1,       0,           0,          0,        -1 },
+   { "LibreWolf", NULL,        NULL,            1 << 1,       0,           0,          0,        -1 },
    { "Telegram",  NULL,        NULL,            1 << 2,       0,           0,          0,        -1 },
 };
 
@@ -157,7 +158,7 @@ static const Key keys[] = {
    { MODKEY,                       XK_q,          killclient,      {0} },
    { MODKEY|ShiftMask,             XK_q,          quit,            {0} },
    { MODKEY,                       XK_r,          spawn,           SHCMD(TERMINAL " -e ranger") },
-   { MODKEY|ShiftMask,             XK_r,          spawn,           SHCMD(TERMINAL " -e htop") },
+   { MODKEY|ShiftMask,             XK_r,          spawn,           SHCMD(TERMINAL " -e btop") },
    { MODKEY,                       XK_t,          setlayout,       {.v = &layouts[0]} }, /* tile */
    { MODKEY|ShiftMask,             XK_t,          setlayout,       {.v = &layouts[1]} }, /* bstack */
    { MODKEY,                       XK_y,          setlayout,       {.v = &layouts[2]} }, /* spiral */
