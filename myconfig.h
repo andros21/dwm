@@ -206,6 +206,7 @@ static const Key keys[] = {
    { MODKEY,                       XK_space,      zoom,            {0} },
    { MODKEY|ShiftMask,             XK_space,      togglefloating,  {0} },
    { MODKEY,                       XK_Print,      spawn,           SHCMD("teiler") },
+   { MODKEY,                       XK_F5,         xrdb,            {.v = NULL } },
 
    { 0, XF86XK_AudioMute,          spawn,         SHCMD("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle; kill -44 $(pidof dwmblocks)") },
    { 0, XF86XK_AudioRaiseVolume,   spawn,         SHCMD("wpctl set-volume @DEFAULT_AUDIO_SINK@ 3%+; kill -44 $(pidof dwmblocks)") },
