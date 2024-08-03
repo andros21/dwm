@@ -172,6 +172,7 @@ static const Key keys[] = {
    { MODKEY|ShiftMask,             XK_o,          incnmaster,      {.i = -1} },
    { MODKEY,                       XK_p,          spawn,           SHCMD("rofi-pass") },
    { MODKEY|ShiftMask,             XK_p,          spawn,           SHCMD("rofi-power") },
+   { MODKEY|ShiftMask,             XK_m,          spawn,           SHCMD("rofi-monitor") },
    { MODKEY,                       XK_backslash,  view,            {0} },
    { MODKEY,                       XK_a,          togglegaps,      {0} },
    { MODKEY|ShiftMask,             XK_a,          defaultgaps,     {0} },
